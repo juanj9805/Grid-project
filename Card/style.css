@@ -1,0 +1,239 @@
+body {
+  background-color: rgb(233, 233, 255);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: rgb(44, 44, 44);
+}
+h1 {
+  color: rgb(83, 49, 156);
+  font-weight: 800;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  padding: 0 64px 64px 64px;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: rgb(233, 233, 255);
+  width: 100%;
+  padding: 16px;
+  font-weight: 800;
+}
+
+nav ul li:hover {
+  font-weight: 800;
+  color: rgb(83, 49, 156);
+  cursor: pointer;
+}
+
+ul li {
+  padding: 8px;
+}
+
+ul li.active {
+  color: rgb(83, 49, 156);
+  position: relative;
+}
+
+ul li.active::before {
+  content: "";
+  width: 200%;
+  left: -50%;
+  border-radius: 10pxv;
+  height: 5px;
+  background-color: rgb(83, 49, 156);
+  position: absolute;
+  bottom: -32px;
+  z-index: 2;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(231, 231, 231);
+  top: 98px;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  margin: 0 16px;
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+  align-items: center;
+  margin: 32px;
+}
+
+.switch button {
+  background-color: rgb(83, 49, 156);
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.toggle {
+  background-color: rgb(83, 49, 156);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  color: rgb(83, 49, 156);
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+.sessions {
+  background-color: rgb(233, 233, 255);
+  text-align: center;
+  padding: 32px;
+  font-weight: 600;
+  width: 50%;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.sessions p {
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sessions h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(83, 49, 156);
+  margin: 0;
+}
+
+.millions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.millions ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  list-style: none;
+}
+
+.million {
+  width: 80%;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(83, 49, 156), rgb(233, 233, 255));
+}
+
+.cards {
+  display: flex;
+  width: 80%;
+}
+
+.card {
+  background-color: rgb(233, 233, 255);
+  margin: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  color: rgb(83, 49, 156);
+  box-shadow: 3px 6px 6px gray;
+  transition: 0.2s transform ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card hr {
+  width: 30%;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.card .top {
+  text-transform: uppercase;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.save {
+  background: linear-gradient(90deg, black, rgb(83, 49, 156));
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h2 {
+  color: rgb(44, 44, 44);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card button {
+  color: white;
+  background-color: rgb(83, 49, 156);
+  width: 70%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
